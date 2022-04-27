@@ -7,7 +7,7 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-#### requirements.txt
+## requirements.txt
 
 ```textile
 Django==4.0.3
@@ -17,10 +17,33 @@ gunicorn==20.1.0
 
 ```shell
 pip install -r requirements.txt
+```
+
+##### Tips requirements.txt
+
+```shell
 pip freeze
 pip freeze> requirements.txt
 pip uninstall -r requirements.txt -y
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Start Project
 
@@ -140,8 +163,6 @@ MIDDLEWARE = [
     '...',
     'livereload.middleware.LiveReloadScript',
 ]
-
-
 ```
 
 #### Django Runserver
@@ -150,5 +171,6 @@ Two diferents terminal
 
 ```shell
 python manage.py livereload
+python manage.py livereload path/to/my-extra-directory/
 python manage.py runserver
 ```
